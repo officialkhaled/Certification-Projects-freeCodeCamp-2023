@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #f4f4f4;
+}
+
+#video {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#nav-bar {
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* #nav-bar should always be on top */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* #header-img should be under the #nav-bar */
+#header-img {
+  position: relative;
+  z-index: 1;
+}
+
+#nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+#nav-bar a:hover {
+  background: #444;
+  color: #fff;
+}
+
+#main {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+}
+
+#main .post {
+  padding: 20px;
+  border-bottom: 1px #ccc dotted;
+}

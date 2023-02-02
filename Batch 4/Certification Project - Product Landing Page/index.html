@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#email">Email</a>
+        <a class="nav-link" href="#submit">Submit</a>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="https://www.freecodecamp.com/email-submit"
+        method="post"
+        id="form"
+      >
+        <div class="video">
+          <video
+            id="video"
+            controls
+            poster="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+          >
+            <source
+              src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="email">
+          <label for="email" name="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="submit">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
